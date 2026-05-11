@@ -9,6 +9,7 @@ export class Table {
     async goto() {
         await this.page.goto(`https://www.leafground.com/table.xhtml`);
     }
+    // Finding the names according to its naming convention in search 
     async Search(String: string): Promise<void> {
         await this.search.fill(String);
     }
